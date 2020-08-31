@@ -8,5 +8,6 @@ namespace JWTAuthentication.Authentication
 {
     public class ApplicationUser : IdentityUser
     {
+
     }
 }

@@ -42,6 +42,14 @@ namespace JWTAuthentication
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            //services.AddIdentity<ApplicationUser, IdentityRole>()
+            //    .AddEntityFrameworkStores<ApplicationDbContext>()
+            //    .AddUserStore<ApplicationUserStore>() //this one provides data storage for user.
+            //    .AddRoleStore<ApplicationRoleStore>()
+            //    .AddUserManager<ApplicationUserManager>()
+            //    .AddRoleManager<ApplicationRoleManager>()
+            //    .AddDefaultTokenProviders();
+
             // Adding Authentication  
             services.AddAuthentication(options =>
             {
